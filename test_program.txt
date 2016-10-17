@@ -1,0 +1,32 @@
+$i_i = 0;
+$i_j = 0;
+$s_c = "--------------------";
+
+while($i_i < 5) {
+ $i_j = 0;
+ $s_b = "| ";
+ 
+ while($i_j < 5) {
+  $s_b = $s_b + randchar + " | ";
+  $i_j = $i_j + 1
+ };
+ 
+ print $s_c;	
+ print $s_b;
+ $i_i = $i_i + 1
+};
+
+print $s_c
+
+
+
+
+
+
+
+
+
+ 
+
+
+

@@ -1,0 +1,35 @@
+$o_animal = ("Animal");
+$o_animal.$s_type = "I am animal";
+$o_animal.$s_gender = "male";
+$o_animal.$i_age = 10;
+
+$o_dog = ("Dog", $o_animal);
+$o_dog.$s_type = "I am Dog";
+$o_dog.$i_age = $o_dog.$i_age + 1;
+
+$o_cat = ("Cat", $o_animal);
+$o_cat.$s_type = "I am Cat";
+
+print "Animal: " + $o_animal.$s_type;
+print "Animal: " + $o_animal.$s_gender;
+print $o_animal.$i_age;
+print " ";
+
+print "Dog: " + $o_dog.$s_type;
+print "Dog: " + $o_dog.$s_gender;
+print $o_dog.$i_age;
+print " ";
+
+print "Cat: " + $o_cat.$s_type;
+print "Cat: " + $o_cat.$s_gender;
+print $o_cat.$i_age
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+//File: README
+//Author: Jonathan Carpenter
+//Email: carpenter.102@wright.edu
+
+This program implements a interpreter for a custom programming
+language.
+
+test_program.txt demonstrates loops and string concatination by printing
+a board.
+
+test_program2.txt demonstrates object inheritence
+
+====================
+Instructions
+====================
+
+To compile and run test programs in a linux enviornment:
+   1) type make
+   2) type ./carp < test_program.txt
+   
+                     or
+
+           ./carp < test_program2.txt
+
+
+====================
+Language Syntax
+====================
+
+
+=====
+Variables
+=====
+
+There are three types of variables in this language strings, integers, and objects.
+
+Strings can be created by using the $s_ prefix followed by letters or numbers.
+ex. $s_a = "hello"
+
+Strings can be concated by using the + operator.
+ex. $s_a = "hello" + " world"
+
+Integer variables can be created by using the prefix $i_ followed by letters or numbers.
+ex. $i_b = 10
+
+
+Object variables can be created by using the prefix $o_ followed by letters or numbers.
+ex. $o_c = ("Animal")
+
+
+Objects can also have integers or strings as attributes.
+ex. $o_c.$i_num = 10 + 30
+ex. $o_c.$s_str = "cookie"
+
+
+Objects can also inherit properties of other objects.
+ex. $o_d = ("Dog", $o_c)
+
+In the last example a new object $o_d was created with the same attributes of
+the $o_c object.
+
+=====
+Loops
+=====
+
+While loops are created with the with the following syntax:
+
+while(<expr>){statements[;statements]}
+
+ex.	$i_i = 0;
+	while($i_i < 10){
+	  print $i_i;
+	  $i_i = $i_i + 1
+	}
